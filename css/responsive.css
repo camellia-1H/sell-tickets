@@ -1,0 +1,14 @@
+/* PC */
+@media (min-width: 1200px) {
+}
+
+/* Mobile and Tablet */
+@media (min-width: 1199px) {
+}
+/* Tablet  */
+@media (min-width: 576px) and (max-width: 1199px) {
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+}

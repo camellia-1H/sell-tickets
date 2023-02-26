@@ -26,17 +26,17 @@
         <link rel="stylesheet" href="./css/responsive.css" />
     </head>
     <body>
-        <div id="app">
+        <div class="wrapper">
             <header id="header" class="header fixed-top d-flex align-items-center">
                 <div class="container d-flex align-items-center justify-content-between">
-                    <a href="index.html" class="logo cl-pink">
+                    <a href="index.html" class="logo cl-pink font-weight-bold">
                         <h1>Film24h<span>.</span></h1>
                     </a>
 
-                    <a class="btn btn-rounded btn-pink radius-16 fs-12" href="#book-a-ticket">Book a Ticket</a>
+                    <button class="btn btn-rounded btn-pink radius-16 fs-12" href="#book-a-ticket">Book a Ticket</button>
 
-                    <nav class="navbar align-items-center">
-                        <ul class="nav-list d-flex align-items-center justify-content-between m-0">
+                    <nav class="navbar justify-content-center align-items-center">
+                        <ul class="nav-list d-flex align-items-center justify-content-between m-0 container">
                             <li class="nav-item position-relative">
                                 <a
                                     class="nav-link dropdown-toggle"
@@ -102,24 +102,35 @@
                                     data-toggle="dropdown"
                                     aria-haspopup="true"
                                     aria-expanded="false">
-                                    <span>Username</span>
-                                    <img src="./assets/img/WIN_20230224_14_50_20_Pro.jpg" alt="" class="user-avatar" />
+                                    <span>
+                                        Username
+                                        <img src="./assets/img/WIN_20230224_14_50_20_Pro.jpg" alt="" class="user-avatar" />
+                                    </span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="userDropdown">
                                     <a class="dropdown-item" href="#">Tài khoản</a>
                                     <a class="dropdown-item" href="#">Vé của tôi</a>
                                     <a class="dropdown-item" href="#">trợ giúp</a>
-                                    <a class="dropdown-item" href="#">Đăng xuất</a>
+                                    <a class="dropdown-item separate-top" href="#">Đăng xuất</a>
                                 </div>
                             </li>
                         </ul>
                     </nav>
+
+                    <button class="mobile-menu_btn hide-on-pc bg-white">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <button class="mobile-menu-close_btn bg-white">
+                        <i class="bi bi-x"></i>
+                    </button>
                 </div>
             </header>
             <!-- End Header -->
 
-            <div class="container"></div>
+            <div class="main bg-gray-200">
+                <div class="container"></div>
+            </div>
 
             <!-- Footer -->
             <footer class="footer container-fluid bg-gray-900 pt-5">

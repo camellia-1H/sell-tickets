@@ -1,0 +1,181 @@
+/* background-color */
+.bg-gray-900 {
+    background-color: #171717;
+}
+
+.bg-gray-800 {
+    background-color: #171717;
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-black-opa {
+    background-color: var(--black);
+    opacity: 0.95;
+}
+
+.bg-img {
+    height: 480px;
+    opacity: 0.2;
+    overflow: hidden;
+    background-image: url('https://img.cdn.vncdn.io/cinema/img/911111623966317-wPJKyDq1F9b4VtpF9dz8FPKVuS5.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: right -200px top;
+}
+
+.bg-age {
+    background-color: rgb(233, 143, 41);
+}
+
+/* color */
+.cl-gray-100 {
+    color: var(--gray-100);
+}
+
+.cl-gray-400 {
+    color: var(--gray-400);
+}
+
+.cl-gray-500 {
+    color: var(--gray-500);
+}
+
+.cl-gray-600 {
+    color: var(--gray-600);
+}
+
+.cl-age {
+    color: rgb(225, 129, 19);
+}
+/* border-radius */
+.br-5 {
+    border-radius: 5px;
+}
+
+/* border */
+
+.bd-gray-100 {
+    border: 1px solid var(--gray-100);
+}
+
+.bd-bottom-600 {
+    border-bottom: 1px solid var(--gray-600);
+}
+
+/*  font size */
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+/* font bold */
+.fb-600 {
+    font-weight: 600;
+}
+
+.fb-400 {
+    font-weight: 400;
+}
+
+.fb-700 {
+    font-weight: 700;
+}
+
+.fb-500 {
+    font-weight: 500;
+}
+
+.fi {
+    font-style: italic;
+}
+
+/* hover */
+
+.hover-opa:hover {
+    color: var(--gray-100);
+    opacity: 0.7;
+    transition: all 1s;
+}
+
+.hover-gray-100:hover {
+    color: var(--gray-100);
+}
+
+.hover-gray-200:hover {
+    color: var(--gray-200);
+}
+
+.hover-pink:hover {
+    color: var(--pink);
+}
+
+.hover-age:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* margin */
+.mt-90 {
+    margin-top: 90px;
+}
+
+/* padding */
+.p-0-8 {
+    padding: 0px 8px;
+}
+
+/*  opacity */
+
+.opa-1 {
+    opacity: 1;
+}
+
+/* width cứng */
+.w40 {
+    width: 40px;
+    text-align: center;
+}
+
+/* word-wrap */
+.word-w {
+    word-wrap: break-word;
+}

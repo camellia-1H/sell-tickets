@@ -10,6 +10,37 @@
     width: 130px;
     height: 39px;
 }
+
+/* film  */
+.film-container {
+    min-height: 480px;
+}
+
+.film-des {
+    inset: 0px;
+    margin: auto;
+    width: 100%;
+}
+
+.btn-playing {
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zoom:hover {
+    /* transform: translateX(-50%); */
+    animation: zoom 0.3s ease-in-out forwards;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/

@@ -8,6 +8,8 @@
 /* Navbar */
 .navbar {
     padding: 0;
+    /* ẩn tạm */
+    display: none;
 }
 
 .nav-link {
@@ -78,6 +80,15 @@ footer {
     height: 39px;
 }
 
+.logo-theater {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-location {
+    width: 20px;
+}
+
 /* film  */
 .film-container {
     min-height: 480px;
@@ -108,3 +119,11 @@ footer {
         transform: scale(1.15);
     }
 }
+
+/* hệ thống film */
+
+.bd-hover:hover {
+    border-color: var(--gray-300);
+    box-shadow: 0 2px 3px rgb(139, 139, 139);
+}
+/*  */

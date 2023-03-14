@@ -102,9 +102,8 @@ footer {
     font-weight: 600;
     margin-bottom: 24px;
 }
-<<<<<<< HEAD
-=======
 
+/* Film Detail */
 .zoom:hover {
     /* transform: translateX(-50%); */
     animation: zoom 0.3s ease-in-out forwards;
@@ -125,4 +124,3 @@ footer {
     border-color: var(--gray-300);
     box-shadow: 0 2px 3px rgb(139, 139, 139);
 }
->>>>>>> 9838e2c043350a7f62183ee590031c0d61a8f2f5

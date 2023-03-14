@@ -102,3 +102,27 @@ footer {
     font-weight: 600;
     margin-bottom: 24px;
 }
+<<<<<<< HEAD
+=======
+
+.zoom:hover {
+    /* transform: translateX(-50%); */
+    animation: zoom 0.3s ease-in-out forwards;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
+
+/* hệ thống film */
+
+.bd-hover:hover {
+    border-color: var(--gray-300);
+    box-shadow: 0 2px 3px rgb(139, 139, 139);
+}
+>>>>>>> 9838e2c043350a7f62183ee590031c0d61a8f2f5

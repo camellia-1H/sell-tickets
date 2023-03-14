@@ -82,6 +82,11 @@ li {
     list-style: none;
 }
 
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
 /* component */
 .separate-top {
     border-top: 1px solid var(--pink);

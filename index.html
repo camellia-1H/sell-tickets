@@ -13,7 +13,13 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +33,12 @@
     </head>
     <body>
         <div class="wrapper">
+            <!-- Header -->
             <header id="header" class="header fixed-top d-flex align-items-center">
                 <div class="container d-flex align-items-center justify-content-between">
                     <a href="index.html" class="logo cl-pink font-weight-bold">
                         <h1>Film24h<span>.</span></h1>
                     </a>
-
-                    <button class="btn btn-rounded btn-pink radius-16 fs-12" href="#book-a-ticket">Book a Ticket</button>
 
                     <nav class="navbar justify-content-center align-items-center">
                         <ul class="nav-list d-flex align-items-center justify-content-between m-0 container">
@@ -95,7 +100,7 @@
                             </li>
                             <li class="nav-item position-relative">
                                 <a
-                                    class="nav-link"
+                                    class="nav-link dropdown-toggle"
                                     href="#"
                                     role="button"
                                     id="userDropdown"
@@ -103,8 +108,8 @@
                                     aria-haspopup="true"
                                     aria-expanded="false">
                                     <span>
+                                        <img src="./assets/img/user.png" alt="" class="user-avatar" />
                                         Username
-                                        <img src="./assets/img/WIN_20230224_14_50_20_Pro.jpg" alt="" class="user-avatar" />
                                     </span>
                                 </a>
 
@@ -119,18 +124,54 @@
                     </nav>
 
                     <button class="mobile-menu_btn hide-on-pc bg-white">
-                        <i class="bi bi-list"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
-                    <button class="mobile-menu-close_btn bg-white">
-                        <i class="bi bi-x"></i>
+                    <button class="mobile-menu-close_btn hide-on-pc bg-white">
+                        <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
             </header>
             <!-- End Header -->
 
+            <!-- Main -->
             <div class="main bg-gray-200">
-                <div class="container"></div>
+                <!-- Hero Unit -->
+                <section class="hero-unit">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="hero-content col-12 col-md-6 col-lg-6">
+                                <h1 class="hero-content__header">Đặt vé ngay tại Film24h</h1>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Du hí các rạp, <strong>trải nghiệm xem phim hay</strong></p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4"><strong>Đặt vé tức tiếp,</strong> thanh toán xong ngay</p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Gợi ý dữ liệu, <strong>suất chiếu gần đây</strong></p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Lịch sử đặt vé <strong>Được lưu lại ngay</strong></p>
+                                </div>
+
+                                <a class="btn btn-lg btn-pink mt-4" href="#" role="button">Đặt vé ngay</a>
+                            </div>
+                            <div class="hero-image d-flex align-items-center col-12 col-md-6 col-lg-6">
+                                <img src="./assets/img/Hero.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Hero Unit -->
+
+                <!-- Phim đang chiếu -->
+                <!-- End Phim đang chiếu -->
             </div>
+            <!-- End Main -->
 
             <!-- Footer -->
             <footer class="footer container-fluid bg-gray-900 pt-5">

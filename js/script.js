@@ -8,11 +8,10 @@ $(function () {
 function showMobileNav(e) {
     $(e.currentTarget).hide();
     $('.mobile-menu-close_btn').show();
-    $('.navbar').fadeIn(400);
+    $('.navbar').addClass('active');
 }
 function hideMobileNav(e) {
     $(e.currentTarget).hide();
     $('.mobile-menu_btn').show();
-    $('.navbar').removeClass('container');
-    $('.navbar').fadeOut(400);
+    $('.navbar').removeClass('active');
 }

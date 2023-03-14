@@ -13,7 +13,14 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,13 +34,12 @@
     </head>
     <body>
         <div class="wrapper">
+            <!-- Header -->
             <header id="header" class="header fixed-top d-flex align-items-center">
                 <div class="container d-flex align-items-center justify-content-between">
                     <a href="index.html" class="logo cl-pink font-weight-bold">
                         <h1>Film24h<span>.</span></h1>
                     </a>
-
-                    <button class="btn btn-rounded btn-pink radius-16 fs-12" href="#book-a-ticket">Book a Ticket</button>
 
                     <nav class="navbar justify-content-center align-items-center">
                         <ul class="nav-list d-flex align-items-center justify-content-between m-0 container">
@@ -95,7 +101,7 @@
                             </li>
                             <li class="nav-item position-relative">
                                 <a
-                                    class="nav-link"
+                                    class="nav-link dropdown-toggle"
                                     href="#"
                                     role="button"
                                     id="userDropdown"
@@ -103,8 +109,8 @@
                                     aria-haspopup="true"
                                     aria-expanded="false">
                                     <span>
+                                        <img src="./assets/img/user.png" alt="" class="user-avatar" />
                                         Username
-                                        <img src="./assets/img/WIN_20230224_14_50_20_Pro.jpg" alt="" class="user-avatar" />
                                     </span>
                                 </a>
 
@@ -119,771 +125,231 @@
                     </nav>
 
                     <button class="mobile-menu_btn hide-on-pc bg-white">
-                        <i class="bi bi-list"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
-                    <button class="mobile-menu-close_btn bg-white">
-                        <i class="bi bi-x"></i>
+                    <button class="mobile-menu-close_btn hide-on-pc bg-white">
+                        <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
             </header>
             <!-- End Header -->
 
-            <!-- container -->
-            <div class="row mt-60">
-                <div class="duong-dan-den-trang"></div>
-
-                <!-- HỆ THỐNG RAP -->
-                <div class="container-fluid bg-main">
+            <!-- Main -->
+            <div class="main bg-gray-200">
+                <!-- Hero Unit -->
+                <section class="hero-unit">
                     <div class="container">
-                        <section class="section pt-5 pb-5">
-                            <div class="d-flex flex-column align-items-center mb-3">
-                                <h2 class="cl-pink fb-600">Hệ thống rạp chiếu phim</h2>
-                                <p class="fs-14 cl-gray-600">Danh sách hệ thống rạp chiếu phim lớn có mặt khắp cả nước</p>
+                        <div class="row align-items-center">
+                            <div class="hero-content col-12 col-md-6 col-lg-6">
+                                <h1 class="hero-content__header">Đặt vé ngay tại Film24h</h1>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Du hí các rạp, <strong>trải nghiệm xem phim hay</strong></p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4"><strong>Đặt vé tức tiếp,</strong> thanh toán xong ngay</p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Gợi ý dữ liệu, <strong>suất chiếu gần đây</strong></p>
+                                </div>
+                                <div class="hero-content__para d-flex">
+                                    <i class="fa-solid fa-check"></i>
+                                    <p class="ml-4">Lịch sử đặt vé <strong>Được lưu lại ngay</strong></p>
+                                </div>
+
+                                <a class="btn btn-lg btn-pink mt-4" href="#" role="button">Đặt vé ngay</a>
                             </div>
-                            <div class="d-flex flex-lg-wrap flex-md-wrap justify-content-between">
-                                <a class="theater-container col-lg-6 col-md-6 col-sm-12 d-flex pr-2 pl-2 mr--4 ml--4 mb-4">
-                                    <div
-                                        class="theater d-flex align-items-center justify-content-between p-4 bg-white br-10 bd-gray-300 flex-1 bd-hover">
-                                        <img
-                                            class="logo-theater"
-                                            src="https://static.mservice.io/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg"
-                                            alt="" />
-                                        <div class="d-flex flex-column flex-1 ml-4">
-                                            <h2 class="cl-pink fb-600 fs-18 m-0">CGV</h2>
-                                            <p class="fs-14 cl-gray-500 mb-2">Hệ thống rạp chiếu phim lớn nhất</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <p class="fs-13 cl-gray-600 ml-3">1326 đánh giá</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="logo-location">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="mr-1 inline-block h-4 w-4"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor">
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </div>
-                                                <span class="fs-13 align-self-start">86 rạp</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="theater-container col-lg-6 col-md-6 col-sm-12 d-flex pr-2 pl-2 mr--4 ml--4 mb-4">
-                                    <div
-                                        class="theater d-flex align-items-center justify-content-between p-4 bg-white br-10 bd-gray-300 flex-1 bd-hover">
-                                        <img
-                                            class="logo-theater"
-                                            src="https://static.mservice.io/blogscontents/momo-upload-api-210604170617-637584231772974269.png"
-                                            alt="" />
-                                        <div class="d-flex flex-column flex-1 ml-4">
-                                            <h2 class="cl-pink fb-600 fs-18 m-0">Lotte Cinema</h2>
-                                            <p class="fs-14 cl-gray-500 mb-2">Hệ thống rạp chiếu phim từ Hàn Quốc</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <p class="fs-13 cl-gray-600 ml-3">1450 đánh giá</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="logo-location">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="mr-1 inline-block h-4 w-4"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor">
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </div>
-                                                <span class="fs-13 align-self-start">54 rạp</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="theater-container col-lg-6 col-md-6 col-sm-12 d-flex pr-2 pl-2 mr--4 ml--4 mb-4">
-                                    <div
-                                        class="theater d-flex align-items-center justify-content-between p-4 bg-white br-10 bd-gray-300 flex-1 bd-hover">
-                                        <img
-                                            class="logo-theater"
-                                            src="https://static.mservice.io/cinema/momo-upload-api-211123095138-637732578984425272.png"
-                                            alt="" />
-                                        <div class="d-flex flex-column flex-1 ml-4">
-                                            <h2 class="cl-pink fb-600 fs-18 m-0">Galaxy Cinema</h2>
-                                            <p class="fs-14 cl-gray-500 mb-2">Mang ho ly hút đến gần bạn</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <p class="fs-13 cl-gray-600 ml-3">589 đánh giá</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="logo-location">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="mr-1 inline-block h-4 w-4"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor">
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </div>
-                                                <span class="fs-13 align-self-start">46 rạp</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="theater-container col-lg-6 col-md-6 col-sm-12 d-flex pr-2 pl-2 mr--4 ml--4 mb-4">
-                                    <div
-                                        class="theater d-flex align-items-center justify-content-between p-4 bg-white br-10 bd-gray-300 flex-1 bd-hover">
-                                        <img
-                                            class="logo-theater"
-                                            src="https://static.mservice.io/cinema/momo-upload-api-210813104719-637644484394328824.png"
-                                            alt="" />
-                                        <div class="d-flex flex-column flex-1 ml-4">
-                                            <h2 class="cl-pink fb-600 fs-18 m-0">Beta Cinema</h2>
-                                            <p class="fs-14 cl-gray-500 mb-2">Hệ thống rạp chiếu Beta Cinema</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <p class="fs-13 cl-gray-600 ml-3">1978 đánh giá</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="logo-location">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="mr-1 inline-block h-4 w-4"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor">
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </div>
-                                                <span class="fs-13 align-self-start">105 rạp</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a class="theater-container col-lg-6 col-md-6 col-sm-12 d-flex pr-2 pl-2 mr--4 ml--4 mb-4">
-                                    <div
-                                        class="theater d-flex align-items-center justify-content-between p-4 bg-white br-10 bd-gray-300 flex-1 bd-hover">
-                                        <img
-                                            class="logo-theater"
-                                            src="https://img.mservice.io/momo_app_v2/new_version/img/THAO.MAI/DcineLogo.png"
-                                            alt="" />
-                                        <div class="d-flex flex-column flex-1 ml-4">
-                                            <h2 class="cl-pink fb-600 fs-18 m-0">DCINE</h2>
-                                            <p class="fs-14 cl-gray-500 mb-2">Hệ thống rạp chiếu DCINE</p>
-                                            <div class="d-flex">
-                                                <div>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="mr--5"
-                                                        ><svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            fill="#FCD34D"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                            width="16">
-                                                            <path
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                stroke-width="1"
-                                                                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                                <p class="fs-13 cl-gray-600 ml-3">189 đánh giá</p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <div class="logo-location">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        class="mr-1 inline-block h-4 w-4"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor">
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                                        <path
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                    </svg>
-                                                </div>
-                                                <span class="fs-13 align-self-start">39 rạp</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="hero-image d-flex align-items-center col-12 col-md-6 col-lg-6">
+                                <img src="./assets/img/Hero.jpg" alt="" />
                             </div>
-                            <div class="text-center mt-5 mb-4">
-                                <button class="btn btn-pink btn--primary fs-15 fb-600">Tìm rạp chiếu</button>
-                            </div>
-                        </section>
+                        </div>
                     </div>
-                </div>
-                <!--end HỆ THỐNG RAP -->
+                </section>
+                <!-- End Hero Unit -->
 
-                <div class="main bg-gray-200">
-                    <div class="container"></div>
-                </div>
+                <!-- Phim đang chiếu -->
+                <!-- End Phim đang chiếu -->
+            </div>
+            <!-- End Main -->
 
-                <!-- Footer -->
-                <footer class="footer container-fluid bg-gray-900 pt-5">
-                    <div class="container p-0">
-                        <div class="row bd-bottom-600 pb-5">
-                            <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-between">
-                                <div class="col-lg-4 col-md-3 col-sm-6">
-                                    <div class="footer__widget cl-gray-100">
-                                        <a href="#" class="hover-opa"><h4>Lịch chiếu phim</h4></a>
-                                        <ul class="mt-4">
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim đang chiếu</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim sắp chiếu</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-3 col-sm-6">
-                                    <div class="footer__widget cl-gray-100">
-                                        <a href="#" class="hover-opa"><h4>Blog điện ảnh</h4></a>
-                                        <ul class="mt-4">
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim chiếu rạp</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Review phim</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Top phim</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim Netflix</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-3 col-sm-6">
-                                    <div class="footer__widget cl-gray-100">
-                                        <a href="#" class="hover-opa"><h4>Rạp chiếu phim</h4></a>
-                                        <ul class="mt-4">
-                                            <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">CGV</a></li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Lotte Cinema</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">BHD Star</a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Beta Cinema</a>
-                                            </li>
-                                            <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">DCINE</a></li>
-                                            <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">CinemaX</a></li>
-                                        </ul>
-                                        <div class="footer__widget__social">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-8 col-sm-8">
-                                <div class="pl-4">
-                                    <h3 class="cl-gray-100">CHĂM SÓC KHÁCH HÀNG</h3>
-                                    <ul class="mt-4 cl-gray-500 fs-13 fb-500">
-                                        <li>
-                                            <span>Địa chỉ: </span>Tầng M, Tòa nhà Victory Tower, Số 12 Tân Trào, Phường Tân Phú, Quận 7, Thành phố Hồ
-                                            Chí Minh
+            <!-- Footer -->
+            <footer class="footer container-fluid bg-gray-900 pt-5">
+                <div class="container p-0">
+                    <div class="row bd-bottom-600 pb-5">
+                        <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-between">
+                            <div class="col-lg-4 col-md-3 col-sm-6">
+                                <div class="footer__widget cl-gray-100">
+                                    <a href="#" class="hover-opa"><h4>Lịch chiếu phim</h4></a>
+                                    <ul class="mt-4">
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim đang chiếu</a>
                                         </li>
-                                        <li>
-                                            <span>Hotline: </span><a class="" href="tel:1900545441">1900 5454 41</a>
-                                            (1000 đ/phút)
-                                        </li>
-                                        <li><span>Email: </span><a class="cl-gray-100" href="mailto:hotro@momo.vn">hotro@momo.vn</a></li>
-                                        <li>
-                                            <span>Tổng đài gọi ra: </span><a class="cl-gray-100" href="tel:02873065555">028.7306.5555</a
-                                            ><span class="cl-gray-500"> - </span><a class="cl-gray-100" href="tel:02899995555">028.9999.5555</a>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim sắp chiếu</a>
                                         </li>
                                     </ul>
-                                    <a href="ngu" class="d-flex">
-                                        <div class="bg-black d-flex align-items-center br-5 bd-gray-100 pr-2 pl-2">
-                                            <div class="mr-3">
-                                                <svg width="25" height="30" fill="#fff" stroke="currentColor" viewBox="0 0 345.1 512">
-                                                    <g>
-                                                        <path
-                                                            d="M279.4,23.7H30.8C14.5,23.7,0,38.2,0,56.3v401.8c0,16.3,14.5,30.8,30.8,30.8H76h23.8L76,449.4H34.5V96.2h243.1v152l34.5,22 V56.3C312,38.2,297.5,23.7,279.4,23.7z M226.8,77.1H86.1c-8.1,0-13.5-5.4-13.5-13.5c0-8.1,5.4-13.5,13.5-13.5h140.8 c5.4,0,10.8,5.4,10.8,13.5C237.7,71.7,232.3,77.1,226.8,77.1z"></path>
-                                                        <path
-                                                            d="M189.4,200.7c-14.4,0-25.9,11.6-25.9,25.9v155.7l-17.3-34.6c-14.2-26.3-28.1-23.6-38.9-17.3c-12.5,8.3-17.2,17-8.6,38.9 c19.6,48.2,49.8,105.6,82.2,142.7h116.7c41-30.4,74-175,17.3-181.6c-5.2,0-13.5,0.8-17.3,4.3c0-17.3-15.1-21.7-21.6-21.6 c-7.5,0.1-13,4.3-17.3,13c0-17.3-14.1-21.6-21.6-21.6c-8.3,0-17.9,5.2-21.6,13v-90.8C215.4,212.3,203.8,200.7,189.4,200.7z"></path>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <p class="mt-3 mb-0 cl-gray-400 fs-12">Hướng dẫn trợ giúp trên</p>
-                                                <p class="cl-gray-100 fs-12 fb-600">Ứng dụng Ví MoMo</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="row mt-4">
-                                        <a href="ngu" class="d-block">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img
-                                                    class="logo-contact"
-                                                    src="https://static.mservice.io/img/momo-upload-api-210724113855-637627235353131497.jpg"
-                                                    alt="" />
-                                            </div>
-                                        </a>
-                                        <a href="ngu" class="d-block">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img
-                                                    class="logo-contact"
-                                                    src="https://static.mservice.io/img/momo-upload-api-210724113959-637627235994410679.jpg"
-                                                    alt="" />
-                                            </div>
-                                        </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3 col-sm-6">
+                                <div class="footer__widget cl-gray-100">
+                                    <a href="#" class="hover-opa"><h4>Blog điện ảnh</h4></a>
+                                    <ul class="mt-4">
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim chiếu rạp</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Review phim</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Top phim</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Phim Netflix</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3 col-sm-6">
+                                <div class="footer__widget cl-gray-100">
+                                    <a href="#" class="hover-opa"><h4>Rạp chiếu phim</h4></a>
+                                    <ul class="mt-4">
+                                        <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">CGV</a></li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Lotte Cinema</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">BHD Star</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">Beta Cinema</a>
+                                        </li>
+                                        <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">DCINE</a></li>
+                                        <li class="mb-2"><a href="#" class="cl-gray-500 hover-gray-200 fs-13 fb-500">CinemaX</a></li>
+                                    </ul>
+                                    <div class="footer__widget__social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row pt-4 pb-4">
-                            <div class="col-lg-12">
-                                <div class="d-flex align-items-center">
-                                    <div class="col-lg-5 col-md-6 col-sm-6 d-flex align-items-center">
-                                        <div class="logo-footer d-flex align-items-center justify-content-center p-2 rounded">
-                                            <svg
-                                                width="96"
-                                                class="momo__logo"
-                                                height="87"
-                                                viewBox="0 0 96 87"
-                                                fill="#fff"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M75.5326 0C64.2284 0 55.0651 8.74843 55.0651 19.5409C55.0651 30.3333 64.2284 39.0818 75.5326 39.0818C86.8368 39.0818 96 30.3333 96 19.5409C96 8.74843 86.8368 0 75.5326 0ZM75.5326 27.8805C70.7368 27.8805 66.8403 24.1604 66.8403 19.5818C66.8403 15.0031 70.7368 11.283 75.5326 11.283C80.3283 11.283 84.2248 15.0031 84.2248 19.5818C84.2248 24.1604 80.3283 27.8805 75.5326 27.8805ZM49.1561 14.6761V39.1226H37.3809V14.5535C37.3809 12.7138 35.8394 11.2421 33.9126 11.2421C31.9857 11.2421 30.4442 12.7138 30.4442 14.5535V39.1226H18.669V14.5535C18.669 12.7138 17.1276 11.2421 15.2007 11.2421C13.2739 11.2421 11.7324 12.7138 11.7324 14.5535V39.1226H0V14.6761C0 6.58176 6.89385 0 15.372 0C18.8403 0 22.0089 1.10377 24.5781 2.9434C27.1472 1.10377 30.3586 0 33.7841 0C42.2623 0 49.1561 6.58176 49.1561 14.6761ZM75.5326 47.544C64.2284 47.544 55.0651 56.2925 55.0651 67.0849C55.0651 77.8774 64.2284 86.6258 75.5326 86.6258C86.8368 86.6258 96 77.8774 96 67.0849C96 56.2925 86.8368 47.544 75.5326 47.544ZM75.5326 75.4245C70.7368 75.4245 66.8403 71.7044 66.8403 67.1258C66.8403 62.5472 70.7368 58.827 75.5326 58.827C80.3283 58.827 84.2248 62.5472 84.2248 67.1258C84.2248 71.7044 80.3283 75.4245 75.5326 75.4245ZM49.1561 62.2201V86.6667H37.3809V62.0975C37.3809 60.2579 35.8394 58.7862 33.9126 58.7862C31.9857 58.7862 30.4442 60.2579 30.4442 62.0975V86.6667H18.669V62.0975C18.669 60.2579 17.1276 58.7862 15.2007 58.7862C13.2739 58.7862 11.7324 60.2579 11.7324 62.0975V86.6667H0V62.2201C0 54.1258 6.89385 47.544 15.372 47.544C18.8403 47.544 22.0089 48.6478 24.5781 50.4874C27.1472 48.6478 30.3158 47.544 33.7841 47.544C42.2623 47.544 49.1561 54.1258 49.1561 62.2201Z"
-                                                    fill=""></path>
+                        <div class="col-lg-4 col-md-8 col-sm-8">
+                            <div class="pl-4">
+                                <h3 class="cl-gray-100">CHĂM SÓC KHÁCH HÀNG</h3>
+                                <ul class="mt-4 cl-gray-500 fs-13 fb-500">
+                                    <li>
+                                        <span>Địa chỉ: </span>Tầng M, Tòa nhà Victory Tower, Số 12 Tân Trào, Phường Tân Phú, Quận 7, Thành phố Hồ Chí
+                                        Minh
+                                    </li>
+                                    <li>
+                                        <span>Hotline: </span><a class="" href="tel:1900545441">1900 5454 41</a>
+                                        (1000 đ/phút)
+                                    </li>
+                                    <li><span>Email: </span><a class="cl-gray-100" href="mailto:hotro@momo.vn">hotro@momo.vn</a></li>
+                                    <li>
+                                        <span>Tổng đài gọi ra: </span><a class="cl-gray-100" href="tel:02873065555">028.7306.5555</a
+                                        ><span class="cl-gray-500"> - </span><a class="cl-gray-100" href="tel:02899995555">028.9999.5555</a>
+                                    </li>
+                                </ul>
+                                <a href="ngu" class="d-flex">
+                                    <div class="bg-black d-flex align-items-center br-5 bd-gray-100 pr-2 pl-2">
+                                        <div class="mr-3">
+                                            <svg width="25" height="30" fill="#fff" stroke="currentColor" viewBox="0 0 345.1 512">
+                                                <g>
+                                                    <path
+                                                        d="M279.4,23.7H30.8C14.5,23.7,0,38.2,0,56.3v401.8c0,16.3,14.5,30.8,30.8,30.8H76h23.8L76,449.4H34.5V96.2h243.1v152l34.5,22 V56.3C312,38.2,297.5,23.7,279.4,23.7z M226.8,77.1H86.1c-8.1,0-13.5-5.4-13.5-13.5c0-8.1,5.4-13.5,13.5-13.5h140.8 c5.4,0,10.8,5.4,10.8,13.5C237.7,71.7,232.3,77.1,226.8,77.1z"></path>
+                                                    <path
+                                                        d="M189.4,200.7c-14.4,0-25.9,11.6-25.9,25.9v155.7l-17.3-34.6c-14.2-26.3-28.1-23.6-38.9-17.3c-12.5,8.3-17.2,17-8.6,38.9 c19.6,48.2,49.8,105.6,82.2,142.7h116.7c41-30.4,74-175,17.3-181.6c-5.2,0-13.5,0.8-17.3,4.3c0-17.3-15.1-21.7-21.6-21.6 c-7.5,0.1-13,4.3-17.3,13c0-17.3-14.1-21.6-21.6-21.6c-8.3,0-17.9,5.2-21.6,13v-90.8C215.4,212.3,203.8,200.7,189.4,200.7z"></path>
+                                                </g>
                                             </svg>
                                         </div>
-                                        <ul class="ml-3">
-                                            <li class="cl-gray-100 fs-13">
-                                                <strong>Công Ty Cổ Phần Dịch Vụ Di Động Trực Tuyến (viết tắt M_Service)</strong>
-                                            </li>
-                                            <li class="cl-gray-400 fs-12">
-                                                Lầu 6, Toà nhà Phú Mỹ Hưng, số 8 Hoàng Văn Thái, khu phố 1, Phường Tân Phú, Quận 7, Thành phố Hồ Chí
-                                                Minh
-                                            </li>
-                                        </ul>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <p class="mt-3 mb-0 cl-gray-400 fs-12">Hướng dẫn trợ giúp trên</p>
+                                            <p class="cl-gray-100 fs-12 fb-600">Ứng dụng Ví MoMo</p>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-3 col-sm-3">
-                                        <div class="footer-social pb-2">
+                                </a>
+                                <div class="row mt-4">
+                                    <a href="ngu" class="d-block">
+                                        <div class="col-lg-6 col-md-6">
                                             <img
-                                                class="mr-3"
-                                                width="26"
-                                                src="https://static.mservice.io/styles/desktop/images/social/facebook.svg"
-                                                alt="" />
-                                            <img
-                                                class="mr-3"
-                                                width="26"
-                                                src="https://static.mservice.io/styles/desktop/images/social/linkedin.svg"
-                                                alt="" />
-                                            <img
-                                                class="mr-3"
-                                                width="26"
-                                                src="https://static.mservice.io/styles/desktop/images/social/youtube.svg"
+                                                class="logo-contact"
+                                                src="https://static.mservice.io/img/momo-upload-api-210724113855-637627235353131497.jpg"
                                                 alt="" />
                                         </div>
-                                        <p class="mt-3 fs-10 cl-gray-400">©Copyright M_Service 2023</p>
-                                    </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-3">
-                                        <p class="cl-gray-400 fs-12">Chứng nhận bởi</p>
-                                        <img
-                                            src="https://static.mservice.io/blogscontents/momo-upload-api-210629153623-637605777831780706.png"
-                                            alt="" />
-                                    </div>
+                                    </a>
+                                    <a href="ngu" class="d-block">
+                                        <div class="col-lg-6 col-md-6">
+                                            <img
+                                                class="logo-contact"
+                                                src="https://static.mservice.io/img/momo-upload-api-210724113959-637627235994410679.jpg"
+                                                alt="" />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-                <!-- End Footer -->
-            </div>
+                    <div class="row pt-4 pb-4">
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center">
+                                <div class="col-lg-5 col-md-6 col-sm-6 d-flex align-items-center">
+                                    <div class="logo-footer d-flex align-items-center justify-content-center p-2 rounded">
+                                        <svg
+                                            width="96"
+                                            class="momo__logo"
+                                            height="87"
+                                            viewBox="0 0 96 87"
+                                            fill="#fff"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M75.5326 0C64.2284 0 55.0651 8.74843 55.0651 19.5409C55.0651 30.3333 64.2284 39.0818 75.5326 39.0818C86.8368 39.0818 96 30.3333 96 19.5409C96 8.74843 86.8368 0 75.5326 0ZM75.5326 27.8805C70.7368 27.8805 66.8403 24.1604 66.8403 19.5818C66.8403 15.0031 70.7368 11.283 75.5326 11.283C80.3283 11.283 84.2248 15.0031 84.2248 19.5818C84.2248 24.1604 80.3283 27.8805 75.5326 27.8805ZM49.1561 14.6761V39.1226H37.3809V14.5535C37.3809 12.7138 35.8394 11.2421 33.9126 11.2421C31.9857 11.2421 30.4442 12.7138 30.4442 14.5535V39.1226H18.669V14.5535C18.669 12.7138 17.1276 11.2421 15.2007 11.2421C13.2739 11.2421 11.7324 12.7138 11.7324 14.5535V39.1226H0V14.6761C0 6.58176 6.89385 0 15.372 0C18.8403 0 22.0089 1.10377 24.5781 2.9434C27.1472 1.10377 30.3586 0 33.7841 0C42.2623 0 49.1561 6.58176 49.1561 14.6761ZM75.5326 47.544C64.2284 47.544 55.0651 56.2925 55.0651 67.0849C55.0651 77.8774 64.2284 86.6258 75.5326 86.6258C86.8368 86.6258 96 77.8774 96 67.0849C96 56.2925 86.8368 47.544 75.5326 47.544ZM75.5326 75.4245C70.7368 75.4245 66.8403 71.7044 66.8403 67.1258C66.8403 62.5472 70.7368 58.827 75.5326 58.827C80.3283 58.827 84.2248 62.5472 84.2248 67.1258C84.2248 71.7044 80.3283 75.4245 75.5326 75.4245ZM49.1561 62.2201V86.6667H37.3809V62.0975C37.3809 60.2579 35.8394 58.7862 33.9126 58.7862C31.9857 58.7862 30.4442 60.2579 30.4442 62.0975V86.6667H18.669V62.0975C18.669 60.2579 17.1276 58.7862 15.2007 58.7862C13.2739 58.7862 11.7324 60.2579 11.7324 62.0975V86.6667H0V62.2201C0 54.1258 6.89385 47.544 15.372 47.544C18.8403 47.544 22.0089 48.6478 24.5781 50.4874C27.1472 48.6478 30.3158 47.544 33.7841 47.544C42.2623 47.544 49.1561 54.1258 49.1561 62.2201Z"
+                                                fill=""></path>
+                                        </svg>
+                                    </div>
+                                    <ul class="ml-3">
+                                        <li class="cl-gray-100 fs-13">
+                                            <strong>Công Ty Cổ Phần Dịch Vụ Di Động Trực Tuyến (viết tắt M_Service)</strong>
+                                        </li>
+                                        <li class="cl-gray-400 fs-12">
+                                            Lầu 6, Toà nhà Phú Mỹ Hưng, số 8 Hoàng Văn Thái, khu phố 1, Phường Tân Phú, Quận 7, Thành phố Hồ Chí Minh
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-sm-3">
+                                    <div class="footer-social pb-2">
+                                        <img
+                                            class="mr-3"
+                                            width="26"
+                                            src="https://static.mservice.io/styles/desktop/images/social/facebook.svg"
+                                            alt="" />
+                                        <img
+                                            class="mr-3"
+                                            width="26"
+                                            src="https://static.mservice.io/styles/desktop/images/social/linkedin.svg"
+                                            alt="" />
+                                        <img
+                                            class="mr-3"
+                                            width="26"
+                                            src="https://static.mservice.io/styles/desktop/images/social/youtube.svg"
+                                            alt="" />
+                                    </div>
+                                    <p class="mt-3 fs-10 cl-gray-400">©Copyright M_Service 2023</p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <p class="cl-gray-400 fs-12">Chứng nhận bởi</p>
+                                    <img src="https://static.mservice.io/blogscontents/momo-upload-api-210629153623-637605777831780706.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
         </div>
 
         <!-- bootstrap 4 -->

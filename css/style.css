@@ -104,6 +104,22 @@ footer {
 }
 
 /* Film Detail */
+.film-container {
+    min-height: 480px;
+}
+
+.film-des {
+    inset: 0px;
+    margin: auto;
+    width: 100%;
+}
+
+.btn-playing {
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .zoom:hover {
     /* transform: translateX(-50%); */
     animation: zoom 0.3s ease-in-out forwards;

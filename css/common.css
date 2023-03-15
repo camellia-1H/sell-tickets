@@ -1,6 +1,23 @@
+/* flex-1 */
+.flex-1 {
+    flex: 1;
+}
 /* background-color */
 .bg-gray-900 {
     background-color: var(--gray-900);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-black-opa {
+    background-color: var(--black);
+    opacity: 0.95;
 }
 
 .bg-gray-800 {
@@ -11,6 +28,10 @@
     background-color: var(--gray-200);
 }
 
+.bg-main {
+    background-color: rgb(243, 243, 244);
+}
+
 .bg-black {
     background-color: var(--black);
 }
@@ -18,11 +39,22 @@
 .bg-white {
     background-color: var(--white);
 }
-/* color */
-.cl-pink {
-    color: var(--pink);
+
+.bg-img {
+    height: 480px;
+    opacity: 0.2;
+    overflow: hidden;
+    background-image: url('https://img.cdn.vncdn.io/cinema/img/911111623966317-wPJKyDq1F9b4VtpF9dz8FPKVuS5.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: right -200px top;
 }
 
+.bg-age {
+    background-color: rgb(233, 143, 41);
+}
+
+/* color */
 .cl-gray-100 {
     color: var(--gray-100);
 }
@@ -39,15 +71,35 @@
     color: var(--gray-600);
 }
 
+.cl-pink {
+    color: var(--pink);
+}
+
+.cl-age {
+    color: rgb(225, 129, 19);
+}
+
 /* border-radius */
 .br-5 {
     border-radius: 5px;
+}
+
+.br-10 {
+    border-radius: 10px;
 }
 
 /* border */
 
 .bd-gray-100 {
     border: 1px solid var(--gray-100);
+}
+
+.bd-gray-300 {
+    border: 1px solid var(--gray-300);
+}
+
+.bd-gray-500 {
+    border: 1px solid var(--gray-500);
 }
 
 .bd-bottom-600 {
@@ -64,8 +116,16 @@
     font-size: 12px;
 }
 
+.fs-13 {
+    font-size: 13px;
+}
+
 .fs-14 {
     font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
 }
 
 .fs-16 {
@@ -76,9 +136,33 @@
     font-size: 18px;
 }
 
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
 /* font bold */
 .fb-600 {
     font-weight: 600;
+}
+
+.fb-400 {
+    font-weight: 400;
+}
+
+.fb-700 {
+    font-weight: 700;
+}
+
+.fb-500 {
+    font-weight: 500;
+}
+
+.fi {
+    font-style: italic;
 }
 
 /* hover */
@@ -101,9 +185,56 @@
     color: var(--pink);
 }
 
-/* border-radius */
+.hover-age:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* margin */
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mr--4 {
+    margin-right: -0.4rem;
+}
+
+.ml--4 {
+    margin-left: -0.4rem;
+}
+/* padding */
+.p-0-8 {
+    padding: 0px 8px;
+}
+
+/*  opacity */
+
+.opa-1 {
+    opacity: 1;
+}
+
+/* width cứng */
+.w40 {
+    width: 40px;
+    text-align: center;
+}
+
+/* word-wrap */
+.word-w {
+    word-wrap: break-word;
+}
 
 /* Btn */
+
+.btn--primary {
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
 .btn-rounded {
     border-radius: 16px;
     padding: 8px 16px;

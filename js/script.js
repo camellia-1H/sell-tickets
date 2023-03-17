@@ -15,3 +15,16 @@ function hideMobileNav(e) {
     $('.mobile-menu_btn').show();
     $('.navbar').removeClass('active');
 }
+
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '6b44941691mshf4c5c8b63ac4464p12ac97jsnd757cb99e014',
+        'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com',
+    },
+};
+
+fetch('https://moviesdatabase.p.rapidapi.com/titles/x/titles-by-ids?idsList=tt0001702%2Ctt0001856%2Ctt0001856', options)
+    .then((response) => response.json())
+    .then((response) => console.log(response))
+    .catch((err) => console.error(err));

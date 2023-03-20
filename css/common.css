@@ -32,8 +32,8 @@
     background-color: rgb(243, 243, 244);
 }
 
-.bg-black {
-    background-color: var(--black);
+.bg-pinklight {
+    background-color: rgb(255, 234, 238);
 }
 
 .bg-white {

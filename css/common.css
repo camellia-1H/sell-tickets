@@ -40,16 +40,6 @@
     background-color: var(--white);
 }
 
-.bg-img {
-    height: 480px;
-    opacity: 0.2;
-    overflow: hidden;
-    background-image: url('https://img.cdn.vncdn.io/cinema/img/911111623966317-wPJKyDq1F9b4VtpF9dz8FPKVuS5.jpg');
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-position: right -200px top;
-}
-
 .bg-age {
     background-color: rgb(233, 143, 41);
 }
@@ -132,6 +122,10 @@
     font-size: 16px;
 }
 
+.fs-17 {
+    font-size: 17px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -203,12 +197,20 @@
     margin-right: -0.4rem;
 }
 
+.mr--7 {
+    margin-right: 0.7rem;
+}
+
 .ml--4 {
     margin-left: -0.4rem;
 }
 /* padding */
 .p-0-8 {
     padding: 0px 8px;
+}
+
+.p-60-0 {
+    padding: 60px 0;
 }
 
 /*  opacity */
@@ -228,10 +230,29 @@
     word-wrap: break-word;
 }
 
+/* overflow */
+.over-hid {
+    overflow: hidden;
+}
+
+.over-scY {
+    overflow-y: scroll;
+}
+
+.over-auto {
+    overflow: auto;
+}
+
 /* Btn */
 
 .btn--primary {
     border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.btn--large {
+    font-size: 16px;
+    border-radius: 6px;
     padding: 8px 16px;
 }
 

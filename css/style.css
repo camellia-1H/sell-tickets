@@ -16,9 +16,12 @@
 
 .nav-link {
     padding: 10px 0 10px 32px;
-    color: var(--black);
+    color: var(--gray-600);
 }
 
+.nav-link:hover {
+    color: var(--gray-900);
+}
 .dropdown-menu {
     top: 50px;
     right: 0;
@@ -66,7 +69,7 @@
 
 /* footer */
 footer {
-    display: none;
+    /* display: none; */
 }
 
 .logo-footer {
@@ -86,9 +89,7 @@ footer {
 }
 
 /* Hero unit */
-.hero-unit {
-    padding: 10px 0;
-}
+
 .hero-image {
     padding: 24px 0;
     object-fit: contain;
@@ -104,6 +105,16 @@ footer {
 }
 
 /* Film Detail */
+.bg-img {
+    height: 480px;
+    opacity: 0.2;
+    overflow: hidden;
+    background-image: url('https://img.cdn.vncdn.io/cinema/img/911111623966317-wPJKyDq1F9b4VtpF9dz8FPKVuS5.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: right -200px top;
+}
+
 .film-container {
     min-height: 480px;
 }
@@ -119,19 +130,14 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
-
-.zoom:hover {
-    /* transform: translateX(-50%); */
-    animation: zoom 0.3s ease-in-out forwards;
+.transition-transform {
+    transition: transform 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
+    user-select: auto;
+    pointer-events: auto;
 }
 
-@keyframes zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.15);
-    }
+.zoom:hover {
+    transform: scale(1.12);
 }
 
 /* hệ thống film */
@@ -148,4 +154,61 @@ footer {
 
 .logo-location {
     width: 20px;
+}
+
+/* phim chiếu  */
+.bg-film {
+    min-height: 500px;
+    overflow: hidden;
+    background-image: url('https://static.mservice.io/img/momo-upload-api-210701105436-637607336767432408.jpg');
+    background-size: contain;
+}
+
+.film__item__img {
+    /* min-width: 130px; */
+    width: 20.5rem;
+}
+
+.film__item-zoom:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.film__item-zoom::before {
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-right {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-150%);
+}
+
+.arrow-left {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 20;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-150%);
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    background-color: rgba(249, 249, 249, 0.8);
 }

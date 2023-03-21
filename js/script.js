@@ -36,3 +36,14 @@ $(window).on('resize', function () {
         /* ... */
     }
 });
+
+// blog js thuần :)))
+x = document.querySelectorAll('.btn--blog');
+x[0].onclick = function () {
+    x[0].classList.add('blog-active');
+    x[1].classList.remove('blog-active');
+};
+x[1].onclick = function () {
+    x[1].classList.add('blog-active');
+    x[0].classList.remove('blog-active');
+};

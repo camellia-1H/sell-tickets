@@ -164,19 +164,13 @@ footer {
     background-size: contain;
 }
 
-.film__item__img {
-    /* min-width: 130px; */
-    width: 20.5rem;
-}
-
 .film__item-zoom:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-in-out;
+    transform: scale(1.04);
 }
-
+/* 
 .film__item-zoom::before {
     transition: all 0.3s ease-in-out;
-}
+} */
 
 .arrow-right {
     width: 40px;
@@ -189,7 +183,7 @@ footer {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: -10px;
     transform: translateY(-150%);
 }
 
@@ -211,4 +205,23 @@ footer {
 .arrow-right:hover,
 .arrow-left:hover {
     background-color: rgba(249, 249, 249, 0.8);
+}
+
+/* blog phim */
+.arrow_more {
+    animation: more 0.7s infinite;
+}
+
+@keyframes more {
+    from {
+        transform: translateY(-2px);
+    }
+    to {
+        transform: translateY(4px);
+    }
+}
+
+.blog-active {
+    color: black;
+    border-bottom: 2px solid var(--pink) !important;
 }

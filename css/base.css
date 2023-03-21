@@ -68,6 +68,9 @@ button:focus,
     border: none;
     outline: none;
 }
+button {
+    cursor: pointer;
+}
 
 a,
 a:focus,
@@ -92,8 +95,3 @@ img {
     border-top: 1px solid var(--pink);
 }
 /* Animation */
-/* custom */
-::-webkit-scrollbar {
-    background-color: rgba(105, 104, 104, 0.2);
-    height: 10px;
-}

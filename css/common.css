@@ -260,6 +260,10 @@
     text-align: center;
 }
 
+.h40 {
+    height: 400px;
+}
+
 /* word-wrap */
 .word-w {
     word-wrap: break-word;

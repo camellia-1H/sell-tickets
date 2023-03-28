@@ -232,6 +232,10 @@
     margin-left: -0.4rem;
 }
 /* padding */
+.p-6-0 {
+    padding: 6px 0;
+}
+
 .p-0-8 {
     padding: 0px 8px;
 }
@@ -246,6 +250,14 @@
 
 .p-40-0 {
     padding: 40px 0;
+}
+
+.p-25-0 {
+    padding: 25px 0;
+}
+
+.p-6-25 {
+    padding: 6px 25px;
 }
 
 /*  opacity */

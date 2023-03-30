@@ -34,6 +34,110 @@
     </head>
     <body>
         <div class="wrapper">
+            <!-- modal mua vé -->
+            <!-- <button type="button" class="btn btn-pink btn--primary mt-90" data-toggle="modal" data-target=".modal-lgg">Large modal</button> -->
+            <div class="modal fade modal-lgg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content br-10 over-hid text-center position-relative">
+                        <div class="bg-pink d-flex align-items-center">
+                            <button type="button" class="btn bg-transparent" data-dismiss="modal">
+                                <svg
+                                    width="30"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <span class="text-white fb-600">Mua vé xem phim</span>
+                        </div>
+
+                        <!-- begin validate sell -->
+                        <div class="justify-content-between align-items-center opa-1 w-50 bg-warning cl-black p-3 br-5 one-seat z100 position-fixed">
+                            <p class="h-100 m-0">You chỉ được chọn 1 ghế thôi</p>
+                            <svg
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                class="close-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="justify-content-between align-items-center opa-1 w-50 bg-warning cl-black p-3 br-5 zero-seat z100 position-fixed">
+                            <p class="h-100 m-0">You chọn 1 ghế đã chứ</p>
+                            <svg
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                class="close-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </div>
+
+                        <!-- end validate sell -->
+
+                        <div class="bg-black">
+                            <div class="text-center">
+                                <div class="p-3 m-auto d-flex justify-content-center" style="border-bottom: 4px solid white; width: 16rem"></div>
+                                <p class="text-white pt-2">Màn hình</p>
+                            </div>
+                            <div class="w-lg-50 w-75 m-auto pt-5 pb-5">
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F01</span>
+                                </button>
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F02</span>
+                                </button>
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F03</span>
+                                </button>
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F04</span>
+                                </button>
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F05</span>
+                                </button>
+                                <button class="cinema-seat br-10 mr-3" style="width: 4rem; height: 4rem">
+                                    <span class="text-white fs-13">F06</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-left p-3">
+                            <div>
+                                <p class="cl-black">Shazam! Cơn thịnh nộ của các vị thần</p>
+                                <div class="cl-age fs-13 mb-3">
+                                    <span>15:25</span> ~ <span>17:35</span> . <span>30/03</span> .
+                                    <span>Phòng chiếu P7</span>
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid var(--gray-400)">
+                                <div class="seat-selected pt-2 pb-2">Chỗ ngồi</div>
+                            </div>
+                            <div style="border-top: 1px solid var(--gray-400)" class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fs-15 pt-4">Tạm tính</p>
+                                    <p class="cl-black">0Đ</p>
+                                </div>
+                                <button class="btn-sell btn btn-pink fs-14 fb-600 p-6-25 h-75">Mua vé</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Modal mua vé -->
+
             <!-- Header -->
             <header id="header" class="header fixed-top d-flex align-items-center">
                 <div class="container d-flex align-items-center justify-content-between">
@@ -274,56 +378,8 @@
                                                     <span class="fs-14">Hà Nội</span>
                                                 </div>
                                             </div>
-                                            <div class="d-flex">
-                                                <div class="cinema-item d-flex flex-column text-center p-3">
-                                                    <a class="over-hid position-relative bd-gray-300 br-10">
-                                                        <div class="film-45k fs-10 cl-gray-100 fb-500 bg-danger">45k</div>
-                                                        <img
-                                                            class="p-2"
-                                                            width="50"
-                                                            src="https://static.mservice.io/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg"
-                                                            alt="" />
-                                                    </a>
 
-                                                    <div class="fs-12 mt-2">CGV</div>
-                                                </div>
-                                                <div class="cinema-item d-flex flex-column text-center p-3">
-                                                    <a class="over-hid position-relative bd-gray-300 br-10">
-                                                        <div class="film-45k fs-10 cl-gray-100 fb-500 bg-danger">45k</div>
-                                                        <img
-                                                            class="p-2"
-                                                            width="50"
-                                                            src="https://static.mservice.io/blogscontents/momo-upload-api-210604170617-637584231772974269.png"
-                                                            alt="" />
-                                                    </a>
-
-                                                    <div class="fs-12 mt-2">Lotte</div>
-                                                </div>
-                                                <div class="cinema-item d-flex flex-column text-center p-3">
-                                                    <a class="over-hid bd-gray-300 br-10">
-                                                        <img
-                                                            class="p-2"
-                                                            width="50"
-                                                            src="https://static.mservice.io/blogscontents/momo-upload-api-210604170453-637584230934981809.png"
-                                                            alt="" />
-                                                    </a>
-
-                                                    <div class="fs-12 mt-2">BHD</div>
-                                                </div>
-                                                <div class="cinema-item d-flex flex-column text-center p-3">
-                                                    <a class="over-hid position-relative bd-gray-300 br-10">
-                                                        <div class="film-45k fs-10 cl-gray-100 fb-500 bg-danger">45k</div>
-                                                        <img
-                                                            class="p-2"
-                                                            width="50"
-                                                            src="https://static.mservice.io/cinema/momo-upload-api-210813104719-637644484394328824.png"
-                                                            alt="" />
-                                                    </a>
-
-                                                    <div class="fs-12 mt-2">Beta</div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex mb-3">
+                                            <div class="d-flex mb-3 mt-4">
                                                 <div class="d-flex flex-column align-items-center br-10 bd-gray-300 over-hid mr-3">
                                                     <div class="bg-pink cl-gray-100 fs-16 fb-600 p-6-25">26</div>
                                                     <div class="fs-12 cl-pink p-6-0">Hôm nay</div>
@@ -346,149 +402,167 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-wrap h40 over-scY pt-5 pb-5">
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://static.mservice.io/cinema/momo-upload-api-220615151657-637909030177665504.jpg"
-                                                            alt=""
-                                                    /></a>
+                                        <div class="pt-4 pb-5">
+                                            <div class="bd-bottom-300 flex-1 p-4">
+                                                <div class="cinema-item d-flex flex-column text-center">
+                                                    <div class="d-flex">
+                                                        <div class="over-hid bd-gray-300 br-10">
+                                                            <img
+                                                                class="p-2"
+                                                                width="55"
+                                                                src="https://static.mservice.io/placebrand/s/momo-upload-api-190709165424-636982880641515855.jpg"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="fb-500">
+                                                            <div class="fs-16 mt-2 cl-black">CGV</div>
+                                                            <p class="fs-12 ml-3">Địa chỉ lấy từ db</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                                 <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Cuộc chiến Đa Vũ Trụ</h3>
-                                                    <p class="fs-13">Đấm nhau, Lãng mạn</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
-                                                        23:00 ~ 01:19
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge18.cdn.vncdn.io/cinema/img/2297701952378539-pc75KETPdVnqHWCum3mFnmM0nSn.jpg"
-                                                            alt=""
-                                                    /></a>
-                                                </div>
-                                                <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Lúc đó tôi đã chuyển sinh thành Slime</h3>
-                                                    <p class="fs-13">Đấm nhau, Lãng mạn</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         20:00 ~ 21:19
                                                     </button>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         21:00 ~ 22:10
                                                     </button>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         23:00 ~ 01:19
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge35.cdn.vncdn.io/cinema/img/2992441971565431-wbJcJQ4L1OcgTDi8ydGXFiGpXX5.jpg"
-                                                            alt=""
-                                                    /></a>
+                                            <div class="bd-bottom-300 flex-1 p-4">
+                                                <div class="cinema-item d-flex flex-column text-center">
+                                                    <div class="d-flex">
+                                                        <div class="over-hid bd-gray-300 br-10">
+                                                            <img
+                                                                class="p-2"
+                                                                width="50"
+                                                                src="https://static.mservice.io/blogscontents/momo-upload-api-210604170617-637584231772974269.png"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="fb-500">
+                                                            <div class="fs-16 mt-2 cl-black">Lotte</div>
+                                                            <p class="fs-12 ml-3">Địa chỉ lấy từ db</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                                 <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">13 Nghi thức trừ tà</h3>
-                                                    <p class="fs-13">Kinh dị, Lãng mạn</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
-                                                        23:00 ~ 01:19
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge17.cdn.vncdn.io/cinema/img/1942230700177970-5.jpg"
-                                                            alt=""
-                                                    /></a>
-                                                </div>
-                                                <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Khóa chặt cửa nào Suzume</h3>
-                                                    <p class="fs-13">Hoạt hình, Phiêu lưu</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
-                                                        23:00 ~ 01:19
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge07.cdn.vncdn.io/cinema/img/90579154820471367-HO01WswBGMg0B3quND3mYZxNHN.jpg"
-                                                            alt=""
-                                                    /></a>
-                                                </div>
-                                                <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Siêu lừa gặp siêu lầy</h3>
-                                                    <p class="fs-13">Hài , Lãng mạn</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
-                                                        23:00 ~ 01:19
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge34.cdn.vncdn.io/cinema/img/3523323972506924-conmemay.jpg"
-                                                            alt=""
-                                                    /></a>
-                                                </div>
-                                                <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Tri kỷ</h3>
-                                                    <p class="fs-13">Chính kịch</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         20:00 ~ 21:19
                                                     </button>
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        21:00 ~ 22:10
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        23:00 ~ 01:19
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bd-bottom-300 flex-1 p-4">
+                                                <div class="cinema-item d-flex flex-column text-center">
+                                                    <div class="d-flex">
+                                                        <div class="over-hid bd-gray-300 br-10">
+                                                            <img
+                                                                class="p-2"
+                                                                width="50"
+                                                                src="https://static.mservice.io/blogscontents/momo-upload-api-210604170453-637584230934981809.png"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="fb-500">
+                                                            <div class="fs-16 mt-2 cl-black">BHD Star</div>
+                                                            <p class="fs-12 ml-3">Địa chỉ lấy từ db</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                <div class="pt-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        20:00 ~ 21:19
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        21:00 ~ 22:10
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         23:00 ~ 01:19
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge21.cdn.vncdn.io/cinema/img/4186614928629687-15dkfYdK08TJgx33LlBB694fUGS.jpg"
-                                                            alt=""
-                                                    /></a>
+                                            <div class="bd-bottom-300 flex-1 p-4">
+                                                <div class="cinema-item d-flex flex-column text-center">
+                                                    <div class="d-flex">
+                                                        <div class="over-hid bd-gray-300 br-10">
+                                                            <img
+                                                                class="p-2"
+                                                                width="50"
+                                                                src="https://static.mservice.io/cinema/momo-upload-api-210813104719-637644484394328824.png"
+                                                                alt="" />
+                                                        </div>
+                                                        <div class="fb-500">
+                                                            <div class="fs-16 mt-2 cl-black">Beta</div>
+                                                            <p class="fs-12 ml-3">Địa chỉ lấy từ db</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                                 <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Vong hồn rước lễ</h3>
-                                                    <p class="fs-13">Kinh dị, Lãng mạn</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
-                                                        23:00 ~ 01:19
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        20:00 ~ 21:19
                                                     </button>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 d-flex mt-lg-4 mt-4">
-                                                <div class="col-lg-4 col-2">
-                                                    <a href="./filmDetail.html" class="d-block w-100">
-                                                        <img
-                                                            class="w-100"
-                                                            src="https://traffic-edge23.cdn.vncdn.io/cinema/img/4386653747201863-cPE4onInKRxaj3quzprFnSF2bGB.jpg"
-                                                            alt=""
-                                                    /></a>
-                                                </div>
-                                                <div class="pt-3">
-                                                    <h3 class="cl-black fs-16">Những đứa trẻ trong sương</h3>
-                                                    <p class="fs-13">Tài liệu</p>
-                                                    <button class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
+                                                        21:00 ~ 22:10
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        data-toggle="modal"
+                                                        data-target=".modal-lgg"
+                                                        class="btn bd-blue bg-transparent cl-blue fs-14 fb-500 p-2 br-10 mt-lg-4 mt-1 mr-3">
                                                         23:00 ~ 01:19
                                                     </button>
                                                 </div>
@@ -658,7 +732,7 @@
                                         <h2 class="fs-24 cl-black fb-600">Phim đang chiếu nè</h2>
                                     </div>
 
-                                    <div class="list-film__container">
+                                    <div class="">
                                         <div class="list-film__item p-0 d-flex col-12 bd-bottom-300">
                                             <a href="/filmDetail.html" class="col-4 p-3">
                                                 <div class="over-hid br-5">

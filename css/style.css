@@ -236,3 +236,24 @@ footer {
     transform: translate(-50%, -50%);
     transform: rotate(45deg);
 }
+
+/* Modal */
+.screen {
+    width: 16rem;
+    font-size: 55px;
+}
+
+.cinema-seat {
+    background-color: rgb(114, 46, 209);
+}
+
+.cinema-seat__active {
+    background-color: var(--pink);
+    box-shadow: 0px 2px 2px rgb(248, 248, 248);
+}
+
+.one-seat,
+.zero-seat,
+.more-seat {
+    display: none;
+}
